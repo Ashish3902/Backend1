@@ -1,0 +1,15 @@
+{
+  "name": "backendfrist",
+  "version": "1.0.0",
+  "description": "this is my frist project.",
+  "keywords": [
+    "backend"
+  ],
+  "license": "ISC",
+  "author": "Ashish sharma",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
