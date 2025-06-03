@@ -1,0 +1,7 @@
+//here you can push files that not for change
+*.env
+.env
+.env.*
+/.vscode
+/.nodemodules
+./dist
