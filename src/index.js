@@ -6,14 +6,15 @@ import { app } from "./app.js";
 dotenv.config({
   path: "./env",
 });
+const PORT = process.env.PORT || 8000;
+ConnectDB()
 
-ConnectDB();
-
-then(() => {
-  app.listen(process.env.PORT || 8000, () => {
+.then(() => {
+  app.listen(PORT, () => {
     console.log(`app is runining at ${PORT}`);
   });
-}).catch((err) => {
+})
+.catch((err) => {
   console.log(`app is not runing at this port ${PORT}`);
 });
 
@@ -35,7 +36,6 @@ then(() => {
 //     throw error;
 //   }
 // })(
-//   app.listen(process.env.PORT, () => {
-//     console.log(`app is listening at ${PORT}`);
-//   }),
-// );
+// app.listen(process.env.PORT, () => {
+//   console.log(`app is listening at ${PORT}`);
+// });
