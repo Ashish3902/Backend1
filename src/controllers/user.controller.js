@@ -33,6 +33,7 @@
 // });
 
 // export { userregister };
+
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { ApiError } from "../utils/Apierror.js";
 import { User } from "../models/user.model.js";
@@ -71,7 +72,7 @@ const registerUser = asyncHandler(async (req, res) => {
   // return res
 
   const { fullName, email, username, password } = req.body;
-  //console.log("email: ", email);
+  console.log("email: ", email);
 
   if (
     [fullName, email, username, password].some((field) => field?.trim() === "")
